@@ -29,7 +29,7 @@ const TaskList = () => {
   return (
     <div className="mt-8">
       {editingTask && <TaskForm task={editingTask} onClose={handleCloseForm} />}
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
         {filteredTasks.map((task) => (
           <li
             key={task.id}

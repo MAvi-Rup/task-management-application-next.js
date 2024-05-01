@@ -26,6 +26,9 @@ const TaskForm = ({ task, onClose }) => {
       );
     }
     onClose();
+    setTitle("");
+    setDescription("");
+    setCategory("");
   };
 
   return (

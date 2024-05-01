@@ -19,7 +19,7 @@ const TaskFilters = () => {
       <select
         id="filter"
         onChange={handleFilterChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="bg-sky-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         <option value="all">All</option>
         <option value="completed">Completed</option>

@@ -20,7 +20,7 @@ const TaskSearch = () => {
         type="text"
         id="search"
         onChange={handleSearchChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className=" bg-sky-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
     </div>
   );
