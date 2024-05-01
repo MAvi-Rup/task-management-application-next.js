@@ -1,10 +1,11 @@
+import TaskManager from "@/components/TaskManager";
+import Providers from "@/redux/provider";
+
 
 export default function Home() {
   return (
-    <div>
-      <h1>
-        Task Management Application
-      </h1>
-    </div>
+    <Providers className=" bg-slate-400">
+      <TaskManager />
+    </Providers>
   );
 }

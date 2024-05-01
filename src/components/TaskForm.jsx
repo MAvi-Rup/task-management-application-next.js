@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTask, updateTask } from "../redux/tasksSlice";
+import { addTask, updateTask } from "../redux/taskSlice";
 
 const TaskForm = ({ task, onClose }) => {
   const dispatch = useDispatch();
@@ -31,8 +31,9 @@ const TaskForm = ({ task, onClose }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+      className=" bg-sky-200 shadow-md rounded-lg p-6 mb-4 max-w-lg mx-auto"
     >
+      <h1 className=" text-center text-2xl">Task Manager</h1>
       <div className="mb-4">
         <label htmlFor="title" className="block text-gray-700 font-bold mb-2">
           Title
@@ -42,7 +43,7 @@ const TaskForm = ({ task, onClose }) => {
           id="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
       </div>
@@ -57,7 +58,7 @@ const TaskForm = ({ task, onClose }) => {
           id="description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
       </div>
@@ -73,7 +74,7 @@ const TaskForm = ({ task, onClose }) => {
           id="category"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
       </div>
